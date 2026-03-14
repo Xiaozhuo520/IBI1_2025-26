@@ -9,7 +9,7 @@
 # 8. Print the calculated CrCl.
 
 # --- ACTUAL CODE ---
-age = 428          # in years
+age = 28          # in years
 weight = 55       # in kg
 gender = "female" # "male" or "female"
 Cr = 50           # in µmol/l
