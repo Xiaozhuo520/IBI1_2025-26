@@ -1,6 +1,5 @@
 import matplotlib.pyplot as plt
 
-
 HRs = (72,60,126,85,90,59,76,131,88,121,64)
 print(f'{len(HRs)} patients in total, and average heart rate is {sum(HRs)/len(HRs)}')
 low, normal, high = [],[],[]
