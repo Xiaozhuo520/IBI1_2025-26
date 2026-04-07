@@ -68,6 +68,8 @@ for orf in longest_specific_orfs:
 
 counter = dict(sorted(counter.items(), key=lambda item: item[1], reverse=True))
 
+print(counter)
+
 labels = list(counter.keys())
 sizes = list(counter.values())
 plt.close('all')

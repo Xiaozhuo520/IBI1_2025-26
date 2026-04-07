@@ -1,4 +1,4 @@
-seq = 'AAGAUACAUGGUGGUGUGUCUGUUCUGAGAGGGCCUAAAAG'
+seq = 'AAGAUACAUGCAAGUGGUGUGUCUGUUCUGAGAGGGCCUAAAAG'
 orfs = []
 starts = []
 end_list = ['UAA', 'UAG', 'UGA']
@@ -20,7 +20,7 @@ for start in starts:
             break
 print(orfs)
 max_orf = max(orfs, key=len)
-print(f'The longest orf is {max_orf}, its length is {len(orf)}')
+print(f'The longest orf is {max_orf}, its length is {len(max_orf)}')
 
 
 
