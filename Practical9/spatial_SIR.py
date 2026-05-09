@@ -52,7 +52,7 @@ plt.ion()
 time_point = 0
 while time_point < 100:
     time_point += 1
-    infected_locations = np.argwhere(population>0)
+    infected_locations = np.argwhere(population==1)
     
     for infected_location in infected_locations:
         neighbours = ((-1,-1),(-1,0),(-1,1),
@@ -63,11 +63,11 @@ while time_point < 100:
             if 0 <= x <= 99 and 0 <= y <= 99:
                 if random() <= BETA and population[x,y] == 0:
                     population[x,y] = 1
-    infected_locations = np.argwhere(population>0)
+    infected_locations = np.argwhere(population==1)
     for infected_location in infected_locations:
         x, y = infected_location[0], infected_location[1]
         if random() <= GAMMA:
-            population[x,y] = -1
+            population[x,y] = 2
     
     plt.cla()  
     plt.imshow(population, cmap='viridis', interpolation='nearest')

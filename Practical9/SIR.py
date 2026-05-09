@@ -40,7 +40,7 @@ plt.xlabel('time')
 plt.ylabel('number of people')
 plt.title('SIR model')
 plt.legend()
-plt.savefig('')
+plt.savefig('SIR_plot_vaccination.png')
 plt.show()
 
 

@@ -1,0 +1,13 @@
+Overall, this practical was moderately challenging but highly rewarding. Implementing 
+the basic stochastic SIR model and the vaccination model was relatively straightforward 
+once I understood how to use 'np.random.choice' to assign states based on probabilities. 
+I particularly enjoyed the vaccination section because visualizing the different infection 
+curves provided a very clear, intuitive understanding of "herd immunity".
+
+The most difficult part of the practical was building the 2D spatial SIR model. Managing 
+the grid boundaries, ensuring neighbors were correctly identified without causing 
+index-out-of-bounds errors, and logically tracking the states with np.argwhere required careful thought.
+
+The most important thing I learned today is how to encode real-world, dynamic probabilistic 
+behaviors into array-based mathematical models using Python. It was interesting to simulate 
+a spatial outbreak and watch the infection spread and eventually halt as the population gained resistance.

@@ -5,7 +5,7 @@ N = 10000
 BETA = 0.3
 GAMMA = 0.05
 
-def infection_with_vaccinartion(rate):
+def infection_with_vaccination(rate):
     if N-1-int(N*rate) >= 0:
         time_points = [(N-1-int(N*rate),1,int(N*rate)),]
     else:
@@ -35,13 +35,13 @@ def infection_with_vaccinartion(rate):
 time = list(range(1000))
 
 for i in range(11):
-    plt.plot(time,infection_with_vaccinartion(i/10),label=f'{i*10}%')
+    plt.plot(time,infection_with_vaccination(i/10),label=f'{i*10}%')
 
 plt.xlabel('time')
 plt.ylabel('number of people')
 plt.title('SIR model with different vaccination rates')
 plt.legend()
-plt.savefig('')
+plt.savefig('SIR_plot.png')
 plt.show()
 
 
