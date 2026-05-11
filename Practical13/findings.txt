@@ -1,0 +1,3 @@
+Length: 289 amino acids
+Subcellular localisation: Nucleus
+Range of percentage identities: 52.3% - 100%
