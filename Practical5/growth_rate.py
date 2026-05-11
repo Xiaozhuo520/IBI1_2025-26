@@ -15,8 +15,10 @@ for country in percent_changes:
     print(f'The percent change of {country} is {percent_changes[country]:.4f}')
 
 sorted_countries = sorted(percent_changes.items(), key=lambda x: x[1], reverse=True)
+print(sorted_countries)
+
 for country in sorted_countries:
-    print(country[0], end=', ')
+    print(f'{country[0]}({country[1]:.2f})', end=', ')
 
 print(f"Country with the largest increase is {sorted_countries[0][0]}, and the largest decrease is {sorted_countries[-1][0]}.")
 
